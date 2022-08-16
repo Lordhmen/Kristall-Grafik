@@ -1168,7 +1168,7 @@ class MyWin(QtWidgets.QMainWindow, Form):
             else:
                 self.bGT = '0'
             if str(self.TypeProducts[i].currentText()) != 'Плавка':
-                if int(self.IssuanceTesting[i].dateTime().toString('dd.MM').split('.')[1]) > mmammm:
+                if int(self.IssuanceProtocol[i].dateTime().toString('dd.MM').split('.')[1]) > mmammm:
                     sledm = True
                 else:
                     sledm = False
@@ -1187,7 +1187,7 @@ class MyWin(QtWidgets.QMainWindow, Form):
                              self.Date_of_NOTE,
                              self.bGT]
             else:
-                if int(self.IssuanceTestingQ[i].dateTime().toString('dd.MM').split('.')[1]) > mmammm:
+                if int(self.IssuanceProtocolQ[i].dateTime().toString('dd.MM').split('.')[1]) > mmammm:
                     sledm = True
                 else:
                     sledm = False
